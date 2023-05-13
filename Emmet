@@ -1,0 +1,55 @@
+Emmet — the essential toolkit for web-developers
+About Emmet
+Emmet Documentation
+
+Emmet is a plugin for many popular text editors which greatly improves HTML & CSS workflow:
+
+for vs code setting Ctr+, Then Go to Settings
+Introduction to Emmet and Speedy HTML
+we can write tag using curly bracket {}
+This is under curly bracket
+This is paragraph
+
+Shortcut Ctr+K Remove line
+“Balance Outward” (Ctrl+D)
+“Balance Inward (Shift+Ctrl+D)
+“Go to Matching Pair” (Ctrl+T)
+“Wrap with Abbreviation” (Shift+Ctrl+A)
+“Next Edit Point” (Ctrl+Alt+→) “Previous Edit Point” (Ctrl+Alt+←)
+“Select Next Item” (Shift+Ctrl+.) < “Select Previous Item” (Shift+Ctrl+,)
+“Split/Join Tag” (Ctrl+J) Lorem ipsum dolor sit amet.
+“Merge Lines” (Shift+Ctrl+M)
+“Update Image Size” (Shift+Ctrl+U)
+ “Evaluate Math Expression” (Shift+Ctrl+Y)
+“Increment by 1” (Ctrl+↑) “Decrement by 1” (Ctrl+↓) “Increment by 0.1” (Ctrl+Alt+↑) “Decrement by 0.1” (Ctrl+Alt+↓) “Increment by 10” (Shift+Ctrl+↑) “Decrement by 10” (Shift+Ctrl+↓)
+“Reflect CSS Value” (Ctrl+B) “Encode/Decode Image to data:URL” (Shift+Ctrl+I)
+Lorem, ipsum dolor.
+
+Few Shotcuts
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- Elements You can use elements’ names like div or p to generate HTML tags. Emmet doesn’t have a predefined set of available tag names, you can write any word and transform it into a tag: div →
+, foo → and so on. Nesting operators Nesting operators are used to position abbreviation elements inside generated tree: whether it should be placed inside or near the context element. Child: > You can use > operator to nest elements inside each other: div>ul>li ...will produce
+Sibling: + Use + operator to place elements near each other, on the same level: div+p+bq ...will output
+Climb-up: ^ With > operator you’re descending down the generated tree and positions of all sibling elements will be resolved against the most deepest element: div+div>p>span+em ...will be expanded to
+
+With ^ operator, you can climb one level up the tree and change context where following elements should appear: div+div>p>span+em^bq ...outputs to
+
+You can use as many ^ operators as you like, each operator will move one level up: div+div>p>span+em^^^bq ...will output to
+
+Multiplication: * With * operator you can define how many times element should be outputted: ul>li*5 ...outputs to
+Grouping: () Parenthesises are used by Emmets’ power users for grouping subtrees in complex abbreviations: div>(header>ul>li*2>a)+footer>p ...expands to
+If you’re working with browser’s DOM, you may think of groups as Document Fragments: each group contains abbreviation subtree and all the following elements are inserted at the same level as the first element of group. You can nest groups inside each other and combine them with multiplication * operator: (div>dl>(dt+dd)*3)+footer>p ...produces
+With groups, you can literally write full page mark-up with a single abbreviation, but please don’t do that. Attribute operators Attribute operators are used to modify attributes of outputted elements. For example, in HTML and XML you can quickly add class attribute to generated element. ID and CLASS In CSS, you use elem#id and elem.class notation to reach the elements with specified id or class attributes. In Emmet, you can use the very same syntax to add these attributes to specified element: div#header+div.page+div#footer.class1.class2.class3 ...will output
+Custom attributes You can use [attr] notation (as in CSS) to add custom attributes to your element: td[title="Hello world!" colspan=3] ...outputs You can place as many attributes as you like inside square brackets. You don’t have to specify attribute values: td[colspan title] will produce with tabstops inside each empty attribute (if your editor supports them). You can use single or double quotes for quoting attribute values. You don’t need to quote values if they don’t contain spaces: td[title=hello colspan=3] will work. Item numbering: $ With multiplication * operator you can repeat elements, but with $ you can number them. Place $ operator inside element’s name, attribute’s name or attribute’s value to output current number of repeated element: ul>li.item$*5 ...outputs to
+You can use multiple $ in a row to pad number with zeroes: ul>li.item$$$*5 ...outputs to
+Changing numbering base and direction With @ modifier, you can change numbering direction (ascending or descending) and base (e.g. start value). For example, to change direction, add @- after $: ul>li.item$@-*5 …outputs to
+To change counter base value, add @N modifier to $: ul>li.item$@3*5 …transforms to
+You can use these modifiers together: ul>li.item$@-3*5 …is transformed to
+Text: {} You can use curly braces to add text to element: a{Click me} ...will produce Click me Note that {text} is used and parsed as a separate element (like, div, p etc.) but has a special meaning when written right after element. For example, a{click} and a>{click} will produce the same output, but a{click}+b{here} and a>{click}+b{here} won’t: clickhere clickhere In second example the element is placed inside element. And that’s the difference: when {text} is written right after element, it doesn’t change parent context. Here’s more complex example showing why it is important: p>{Click }+a{here}+{ to continue} ...produces
+Click here to continue
+
+In this example, to write Click here to continue inside
+element we have explicitly move down the tree with > operator after p, but in case of a element we don’t have to, since we need element with here word only, without changing parent context. For comparison, here’s the same abbreviation written without child > operator: p{Click }+a{here}+{ to continue} ...produces
+
+Click
+
+here to continue Notes on abbreviation formatting When you get familiar with Emmet’s abbreviations syntax, you may want to use some formatting to make your abbreviations more readable. For example, use spaces between elements and operators, like this: (header > ul.nav > li*5) + footer

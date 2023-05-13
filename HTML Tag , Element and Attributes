@@ -1,1 +1,92 @@
 
+<h2>Class-3:HTML tags, elements and attributes</h2>
+--------------------------------------------------------------------------------------------------
+
+<pre>All complete line is called element and h2 is called as Tag, h1 t0 h6 Tag is used for heading, Atttibute 
+is wrritten under tag like a tag "xyz.com"" contany </pre>
+<p>lorem is dummy word like below lorem100</p>
+
+<h1>HELLO WORLD</h1>
+<h2>Website</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam placeat deleniti sequi! Maxime perferendis 
+itaque eaque mollitia accusamus facilis. Eligendi, explicabo maxime. Reiciendis doloribus facere sint deserunt 
+dicta, delectus dignissimos temporibus sapiente sit expedita quae architecto cumque provident esse tempore. 
+Ducimus facere repellat, voluptates reprehenderit consequuntur aliquid impedit voluptatibus deserunt.</p>
+<h3>About us</h3>
+<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus ullam pariatur optio fugiat, nam in 
+velit suscipit eius natus numquam voluptates cum vel quibusdam omnis reiciendis eaque ab molestiae ex. Facere 
+nostrum asperiores vitae dolore totam odio deleniti facilis sed, quis sit, accusantium tenetur possimus? 
+Nostrum esse tempore repudiandae quibusdam quo minus ea, excepturi beatae sequi suscipit, tenetur 
+necessitatibus sapiente? Quibusdam explicabo nesciunt cupiditate, quos harum debitis maxime tenetur labore ab 
+perferendis doloribus, est nulla ex? Quam hic quos fuga consequuntur laborum! Consequatur animi temporibus 
+optio, atque accusantium officia nam distinctio corporis odio pariatur doloribus consectetur dolores vero 
+mollitia natus laboriosam doloremque reiciendis quaerat iusto! Rerum, aliquid incidunt! Nemo aliquam 
+voluptatibus voluptatem consequuntur neque sapiente at commodi cupiditate. Incidunt sequi voluptatem veritatis 
+molestias atque, consequatur ducimus odio dolorum quisquam. Praesentium ratione, nemo deleniti non labore, 
+laudantium commodi quia, nesciunt autem ipsam placeat inventore? Quas consequatur blanditiis ullam doloribus 
+non est voluptate hic molestias, labore, eligendi maiores? Eligendi provident ratione quibusdam ut animi sint 
+eos quae hic accusamus? Ea animi mollitia eveniet consectetur. Aspernatur, rerum sequi! Et dignissimos 
+consequuntur praesentium ipsa aliquam! Quod laboriosam, sit fuga velit minus deserunt optio voluptas 
+consequuntur harum molestias saepe corporis praesentium ad corrupti incidunt!</P>
+<h4>Lorem ipsum dolor sit amet.</h4>
+<h5>Lorem ipsum dolor sit amet.</h5>
+<h6>Lorem ipsum dolor sit amet.</h6>
+
+
+<pre>Grouping using div  --></pre> 
+
+<div>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+</div>
+
+
+
+<pre>bold using b and strong tag--></pre> 
+
+<p>Lorem <b>ipsum </b>dolor sit amet consectetur</p>
+<!-- press alt key for multi cursor -->
+<p>Lorem <strong>ipsum </strong>dolor sit amet consectet</p>
+
+<p>Lorem <s>ipsum </s>dolor sit amet consectet</p>
+<pre>for italic word use i and em ....></pre>
+<p>Lorem <i>ipsum </i>dolor sit amet consectei</p>
+
+<p>Lorem <em>ipsum </em>dolor sit amet consectei</p>
+
+<a href="WWW.GOOGLE.COM">GO TO GOOGLE</a>
+
+<table></table>
+<tr></tr>
+<td></td>
+
+<ul>
+    <li>one</li>
+</ul>
+
+<ol>
+    <li>Tea</li>
+</ol>
+
+
+<form action=""></form>
+
+<input type="text">
+
+<input type="month">
+<input type="datetime">
+
+<img src="" alt="">
+<audio src=""></audio>
+<video src=""></video>
+<!-- for video frane -->
+<iframe src="" frameborder="0"></iframe>
+<!-- for wrap -->
+<div></div>
+<div> class="footer"</div>
+<!-- for navigation -->
+<nav></nav>
+<header></header>
+<aside></aside>
+<footer></footer>

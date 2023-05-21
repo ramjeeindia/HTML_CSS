@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding formatting tag,Inline vs Block level element,List Anchor tag</title>
+</head>
+<!-- for style type under body style=bgc #000 then choose color -->
+<body style="background-color: #8b8989;"
+    
+<h1>Understanding formatting tag,Inline vs Block level element,List Anchor tag</h1>
+
+<p>Types of List Tag <b>ul-</b> unorder list ,<b>ol-</b> order list,<b>dl-</b> description list</p>
+<!-- for bold <!-- for repeat code Shift + Alt + Up/Down. -->-->
+<p>Lorem ipsum <b>dolor</b> sit amet.</p>
+<!-- for emphasing bold word by screen/visual reader -->
+<p>Lorem ipsum <strong>dolor</strong> sit amet.</p>
+<!-- italic but not in  use -->
+<p>Lorem ipsum <i>dolor</i> sit amet.</p>
+<!-- use for italic -->
+<p>Lorem ipsum <em>dolor</em> sit amet.</p>
+<!-- for underline -->
+<p>Lorem ipsum <u>dolor</u> sit amet.</p>
+<!--for delete  -->
+<p>Lorem ipsum <s>dolor</s> sit amet.</p>
+<p>Lorem ipsum <del>dolor</del> sit amet.</p>
+
+
+
+    <!-- Bold Text by b or strong Tag -->
+
+    <p><b>This text will be bolded.</b></p>
+    <p><strong>This text will be bolded.</strong></p>
+    
+<h2>Italic Text</h2>
+    <!-- Italic by using i and em -->
+    <p><i>This text will be italic.</i></p>
+    <p><em>This text will be italic.</em></p>
+
+<h2>Underline Text</h2>
+    <!-- Underl  ine text by using u tag -->
+    <p><u >This text will be underline.</u></p>
+
+<h2>Highlight Text</h2>
+    <!-- by using mark tag -->
+    <p><mark>This text will be Highlighted.</mark></p>
+
+<h2>Super scripted</h2>
+     <p>This text will be superscript<sup>This text will be superscript</sup></p>
+<p>H<sup>2</sup>O</p>
+
+h2>SuB scripted</h2>
+    <p>This text will be subscript<sup>This text will be subscript</sup></p>
+<p>H<sub>2</sub>O</p>
+
+<h2>SMALL</h2>
+
+<P>This is Normal Text</P>
+<small>This is Normal Text</small>
+
+<h2>DELETE</h2>
+<!-- del or s tag -->
+<del>This is Normal Text</del>
+<br>
+<s>This is Normal Text</s>
+
+
+
+
+<!--br Tag is self closing tag but close it as </br>  -->
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    <br/>
+    Architecto expedita cum porro deserunt quam modi? Possimus velit dolorum quisquam aspernatur.</p>
+<!-- subscript H 2 0 and superscript Tag -->
+
+<P>
+  H <sub>2</sub>  0
+</P>
+
+<p>10 <sup>2</sup> </p>
+
+<!-- Inline Element -->
+
+<span style="background-color: aqua;">Lorem ipsum dolor sit amet consectetur.</span>
+
+<!-- Block Level- Whole block space taken -->
+
+<h2 style="background-color: blue;">Lorem ipsum dolor sit amet.</h2>
+<p style="background-color: blueviolet;">Lorem ipsum dolor sit amet consectetur.</p>
+
+
+<!-- we can display inline to block and viceversa by using display tag  ;display: inline;-->
+
+<p style="background-color: aqua; display: inline;">Lorem ipsum dolor sit amet.</p>
+<br>
+<h2 style="background-color: crimson;display: inline;">Lorem, ipsum dolor.</h2>
+<!-- inline to block -->
+<span style="background-color: chocolate;display: block;">Lorem ipsum dolor sit amet.</span>
+
+
+<br>
+<small>Ramjee</small> <br>
+<big>Ramjee</big>
+<br>
+<!-- FOR HIGHLIGHT THE CELL -->
+<mark>RAMJEE SINGH</mark>
+
+
+<!-- abbr gives abbriviation for ant content when you cursor on web page PUT Full form or remarks in title-->
+
+<p><abbr title="Cascading Style Sheet">CSS</abbr>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<br>
+<!-- DFN tag for definition -->
+<p><abbr title="Cascading Style Sheet">CSS</abbr>used to define styles for your web pages, 
+    including the design, layout and variations in display for different devices and screen sizes.<dfn</p>
+
+    <br>
+    <ins>20k</ins>
+
+<h3>List Of Block Level Tag </h3>
+<p>
+address>
+article>
+aside>
+blockquote>
+canvas>
+dd>
+div>
+dl>
+dt>
+fieldset>
+figcaption>
+figure>
+footer>
+form>
+h1>-h6>
+header>
+hr>
+li>
+main>
+nav>
+noscript>
+ol>
+p>
+pre>
+section>
+table>
+tfoot>
+ul>
+video> 
+</p>
+
+<h3>Inline Level Elements</h3>
+
+<p>
+    a>
+    abbr>
+    acronym>
+    b>
+    bdo>
+    big>
+    br>
+    button>
+    cite>
+    code>
+    dfn>
+    em>
+    i>
+    img>
+    input>
+    kbd>
+    label>
+    map>
+    object>
+    output>
+    q>
+    samp>
+    script>
+    select>
+    small>
+    span>
+    strong>
+    sub>
+    sup>
+    textarea>
+    time>
+    tt>
+    var>
+       
+
+</p>
+
+<h3>List Tag</h3>
+
+<!-- Unorder List ul Tag showing with dot -->
+<!-- ul>li*3{Item1} -->
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+<!-- ol>li*3{Item 1} -->
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+
+<!-- we can define style  -->
+
+<ul style="list-style: circle;">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+ <!-- by default 1,,2 ...3 but we can assign types for i roman i ii iii with I roman I II III With a small letter and with A capital letter  -->
+<ol type="i">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+
+<ol type="I">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+
+<ol type="A">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+
+<ol type="a">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ol>
+
+
+       <!-- Description list dl kdt and dd -->
+
+       <dl>
+        <dt>IPhone 14
+            <dd>
+        This is latest launch 2023
+            </dd>
+        </dt>
+        
+        
+        
+        <dt>IPhone 13
+            <dd>
+        This is latest launch 2022
+            </dd>
+        </dt>
+        
+        <!-- we can insert multiple description -->
+        <dt>IPhone 12
+            <dd>This is latest launch 2021 </dd>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, reprehenderit.</dd>
+        </dt>
+        
+        
+        </dl>  
+
+     <h3>Anchor Tag a Tag</h3>   
+
+
+<!-- Interlink write url in "" and url name after > -->
+<!-- Link for Mobile -->
+<a href="tel:+919660487879">Call me</a>
+<br>
+<!-- link for email -->
+<a href="mailto:ramjee.india@gmail.com" > Email to Me</a>
+<br>
+<!-- Link for Website -->
+<a href="https://www.google.com/">Google</a>
+<!-- a.blank rel means types of web for search engine -->
+<a href="http://www.microsoft.com" target="_blank" rel="noopener noreferrer"></a>
+<br>
+<!-- download link only file not downloadable-->
+
+<a href="/file/myfile.pdf">Local file</a>
+<br>
+<a href="https://white-butcher-dchuv.pwskills.app/?folder=/config/workspace">download link</a>
+<br>
+<a href="https://images.pexels.com/photos/16614145/pexels-photo-16614145.jpeg?auto=compress&cs=tinysrgb&w=600&
+lazy=load>image linking </a>
+<br>
+<!-- permission to download file -->
+
+<a href="https://images.pexels.com/photos/16614145/pexels-photo-16614145.jpeg?auto=compress&cs=tinysrgb&w=600&
+lazy=load" download >image linking download </a>
+
+
+
+<!-- we can link our own webpage  then webpage open 36 Heading Formatting.html-->
+
+<a href="Grouping.html"> HTML Formatting same Folder</a>
+<br>
+<!-- after putting target=_blank then web page open in another page not same page -->
+<a href="Grouping.html" target="_blank"> HTML Formatting same Folder</a>
+<br>
+<!-- <a href="Intro.html" download>download link permission</a> -->
+<a href="tag.html" download>Download</a>
+
+<h3>Image Tag</h3>
+<img src="ineuron-logo.png" alt="Image Not Loaded">
+
+<br>
+
+<img src="ineuron-logo.png" alt="Image Not Loaded" height="100" width="200">
+<br>
+
+<img src="ineuron-logo.png" alt="Image Not Loaded" height="100" width="200" 
+title="title is used POP UP ON IMAGE">
+
+
+
+
+    </body>
+
+</html>

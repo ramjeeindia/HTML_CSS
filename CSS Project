@@ -32,8 +32,6 @@ Create a web page with a heading and paragraph with information about CSS. Using
 
         p {background-color: #ffff00; }
   </style>
-
-
 </head>
 <body>
  

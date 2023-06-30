@@ -137,6 +137,96 @@ git status
 
 git commit -m "my first html commit"
 
+<!-- for all file  -->
+
+git add 
+git commit -m "all file"
+git status
+
+<!--  git ignore define left private into to pull on web -->
+
+<!-- file name define as .gitignore  -->
+
+for more about ignore go to url 
+<a href="https://mrkandreev.name/snippets/gitignore-generator/">Git Ignore Web</a>
+
+
+<!-- git branch create -->
+
+<!-- for view current branch -->
+git branch
+
+<!--  for create git branch and branch name like html -->
+git branch html
+
+<!-- for switch branch  git checkout branch name like html-->
+git checkout html
+
+<!-- for create and swich new branch git checkout -b branch name-->
+
+git checkout -b emebranch
+
+<!-- when you are in main branch git merge another branch name -m "another branch merge" -->
+git merge html -m "another branch merge"
+
+<!-- for rename brance name -->
+git branch M mainrenamed
+<hr>
+<!-- push to github -->
+
+generate key for linking terminal to web
+
+open terminal and type ssh-keygen in windows os 
+
+: for mac ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+this will generate a key file in user directory
+
+Generating public/private rsa key pair.
+
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/SH0233/.ssh/id_rsa): ramjee
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in ramjee
+Your public key has been saved in ramjee.pub
+
+
+
+
+---------------------------------
+copy file and paste on github 
+ for mac cmd: pbcopy < ~/.ssh/id_ed25519.pub
+
+ for windows go to use directory and copy paste
+
+ https://github.com/settings/keys 
+
+
+ <!-- create readme.md file in vs code markdown -->
+
+ …or create a new repository on the command line
+ echo "# CSS" >> README.md
+ git init
+ git add README.md
+ git commit -m "first commit"
+ git branch -M main
+ git remote add origin https://github.com/ramjeeindia/CSS.git
+ git push -u origin main
+
+
+ …or push an existing repository from the command line
+git remote add origin https://github.com/ramjeeindia/CSS.git
+git branch -M main
+git push -u origin main
+
+
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+
+
 
 
 </body>

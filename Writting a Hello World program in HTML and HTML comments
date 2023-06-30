@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Topics Covered</h1>
+
+<ul>
+    <li>Introdution to HTML</li>
+    <li>Basic Structure of HTML Doc</li>
+    <li>Comment in HTML Doc</li>
+</ul>
+
+
+<h2> Calss-2:Writting a Hello World program in HTML and HTML comments </h2>
+-----------------------------------------------------------------------------------------
+
+<p>For Documentation go to Website </p>  
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"
+> MDN HTML Documents </a>
+
+
+<pre>  >>>>> a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"> MDN HTML Documents </a>
+    Link will Open in Another URL-->
+</pre>
+
+<a href="https://www.w3schools.com/html/">W3 School Link</a>
+
+<pre> >>>>> a href="https://www.w3schools.com/html/!Link ">W3 School... Link will Open in same URL--></pre>

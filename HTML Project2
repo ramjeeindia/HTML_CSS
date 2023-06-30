@@ -1,0 +1,653 @@
+Media & Forms
+
+1. Create a simple blog webpage on PW Skills. The webpage must contain at least 2 headings, 1 image, and some information about PW Skills.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW Blog</title>
+</head>
+<body style="background-color: azure;">
+<div>
+  <h1>PW Skills: Online Courses - Learn to Code Anywhere, Anytime</h1>
+  <img src="https://pwskills.com/images/PWSkills-main.png" width="150" alt="PW Skills Image">
+</div>
+  <h2 style="color: blue;">About Us</h2>
+  <p>PW Skills is the result of a continual effort to exponentially increase the employability of every Indian,
+ irrespective of their socioeconomic status. With accessibility and affordability being the support structure of
+ high-quality, industry-relevant courses, PW Skills aims to empower professionals and students alike to either jumpstart
+ their careers or leverage existing skills with new, future-driven upgrades </p>
+ 
+ <h2 style="color: blue;" >PW Skills Mission</h2>
+  <p>PW Skills' mission is to permeate through every student/professional's outlook towards jobs and change their
+ attitude and perspective from “How Can I Do It?” to “Of Course I Can Do It”. We aim to do this by providing exceptional
+ upskilling courses at affordable rates, while being tech-forward so anyone, anywhere can access and improve their
+ ability to be successful in life.</p>
+ 
+ <p style="color: #4912d4;font-size: larger;">PW Skill Services:</p>
+  <ul>
+    <li >Affordable online courses</li>
+    <li>Experience Portal</li>
+    <li>On-Demand Courses</li>
+    <li>Best in Class/Industry Mentors</li>
+    <li>Job Portal</li>
+    <li>Innovation Lab for Tech products</li>
+  </ul>
+ 
+</body>
+</html>
+
+
+2. Create a simple webpage with the PW Skills logo and add a title attribute with the value “PW Skills”.Observe the changes that the title attribute applies to the image.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW Skills</title>
+</head>
+<body style="background-color: #85d1d1;">
+<div>
+  <h1>Welcome to PW Skills</h1>
+  <h2><u>PW Skills: Online Courses - Learn to Code Anywhere, Anytime</u></h2>
+ 
+  <img src="https://learn.pwskills.com/_next/image?url=%2Fimages%2FPWSkills-main.png&w=640&q=75" width="300 px" alt="PW Skills Logo"  title="PW Skills">
+ 
+</body>
+</html>
+
+
+3. Create a <audio> tag that has controls to pause, play, and adjust the volume.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Tag</title>
+</head>
+<body style="background-color: #aaabaf;">
+    <h1 style="color: #541ed2;">Audio Tag that has controls to pause, play, and adjust the volume</h1>
+   
+    <h2>Audio Tag With Pause Control</h2>
+    <audio  id="Aud" src="https://samplelib.com/lib/preview/mp3/sample-12s.mp3" controls > Audio Show Pause</audio>
+<br>
+    <button onclick="playAudio()" type="button">Play Audio</button>
+    <button onclick="pauseAudio()" type="button">Pause Audio</button>
+ 
+    <script>
+    var x = document.getElementById("Aud");
+    function playAudio() {x.play();}
+    function pauseAudio() {x.pause();}
+    </script>
+
+
+    <h2>Audio Tag With play Control</h2>
+    <audio src="https://samplelib.com/lib/preview/mp3/sample-15s.mp3" controls autoplay controlslist = "nodownload
+    " > Audio Show Auto Play</audio>
+
+
+
+
+       
+<h2>Audio Tag With muted Control</h2>
+<audio src="https://samplelib.com/lib/preview/mp3/sample-6s.mp3" controls muted > Audio Show Muted</audio>
+
+
+
+
+
+
+</body>
+</html>
+
+
+4. Create a <audio> tag that automatically starts playing a song when the page loads. The audio tag should have controls to pause, play, and adjust the volume. Additionally, the song should be set to loop continuously until it is paused by the user.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Tag</title>
+</head>
+<body style="background-color: #aaabaf;">
+    <h1 style="color: #541ed2;">Audio with Volume Control</h1>
+   
+    <br>
+    <audio loop id="audioctr" src="https://samplelib.com/lib/preview/mp3/sample-15s.mp3" controls> </audio>
+    <br>
+    <button onclick="setHalfVolume()" type="button">Vol Lev 0.2</button>
+    <button onclick="setFullVolume()" type="button">Vol Lev 1.0</button><br>
+    <script>
+    var vid = document.getElementById("audioctr");
+   
+    function getVolume() {alert(vid.volume);}
+    function setHalfVolume() {vid.volume = 0.2;}
+    function setFullVolume() {vid.volume = 1.0;}
+    </script>
+   
+</body>
+</html>
+
+5. Create a «video» tag that automatically starts playing a sunrise video when the page loads. The video tag should have controls to pause, play, and adjust the volume.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise</title>
+</head>
+<body>
+
+
+    <h1>Playing a Sunrise Video</h1>
+   
+<video  id="sunrise" src="https://cdn.pixabay.com/vimeo/155244112/islands-2119.mp4?width=640&hash=a1bb94c225796f5a9acaaf98a6be0c9aba84ca21" width="500 px" controls autoplay>Sunrise Moment</video>
+
+
+</body>
+</html>
+
+
+6. Create a similar webpage as we built for assignment question 5. Add a poster attribute to the <video> tag that displays an image of the sunrise.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise</title>
+</head>
+<body>
+
+
+
+
+    <h1>Playing a Sunrise Video</h1>
+   
+<video  id="sunrise" src="https://cdn.pixabay.com/vimeo/155244112/islands-2119.mp4?width=640&hash=a1bb94c225796f5a9acaaf98a6be0c9aba84ca21"  poster="https://samplelib.com/lib/preview/png/sample-boat-400x300.png"  width="500 px" controls autoplay>Sunrise Moment</video>
+
+
+
+
+</body>
+</html>
+
+
+
+
+7. Create a similar webpage as we built for assignment question 6 and disable the download option.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NODOWNLOAD</title>
+</head>
+<body>
+
+
+
+
+    <h1>Playing a Sunrise Video</h1>
+   
+<video controls controlslist="nodownload" id="sunrise"
+src="https://player.vimeo.com/external/384580088.sd.mp4?s=5a70cf74e7eba15961966f024bd3f45e095728d8&profile_id=164&oauth2_token_id=57447761"  width="500" poster="https://samplelib.com/lib/preview/png/sample-boat-400x300.png"
+>Sunrise Moment</video>
+
+
+
+
+</body>
+</html>
+
+
+
+
+8. Create a simple webpage that displays Wikipedia’s physics wallah page using an iframe.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW Wikipedia</title>
+</head>
+<body>
+
+
+<h1>Wikipedia’s physics wallah</h1>
+
+
+<iframe src="https://en.wikipedia.org/wiki/Physics_Wallah" height="600" width=100% frameborder="1"></iframe>
+
+
+</body>
+</html>
+
+
+
+
+
+9. Create a feedback form with a field for the user's name, email address, and message.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+
+
+    <h1>PW Skills Feedback Form</h1>
+    <form action="#" method="post">
+        <label style="margin: 10px;margin-top: 10px;text-align: center;" for="name">User Name:</label>
+        <input type="text" id="name" name="name" > </form>
+
+
+        <br>
+        <form action="#" method="post" >
+        <label style="margin: 10px;margin-top: 10px;text-align: center;" for="email">User Email:</label>
+        <input type="text"  id="email" name="email" > </form>
+
+
+        <br>
+        <form action="#" method="post"></form>
+        <label style="margin: 10px;margin-top: 10px;text-align: center;text-decoration: none;"  for="message">Message:</label>
+        <textarea id="message" placeholder="Feedback" name="message" ></textarea>
+        <br> <br>
+        <form action="#" method="post" >
+        <input  type="submit" style="background-color: darkgreen;"    value="Submit">
+      </form>
+
+
+</body>
+</html>
+
+
+
+10. Create a registration form with fields for the user's name, email address, password, and a checkbox to agree to the terms and conditions. Use the text input type for the name and email fields, the password input type for the password field, and the checkbox input type for the terms and conditions field.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+
+
+    <h1>Registration Form</h1>
+
+
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+        <br>
+        <label>
+        <input type="checkbox" name="terms">
+        I agree to the terms and conditions.
+        </label>
+        <input type="submit" value="Register">
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+Modern HTML Assignment
+
+1. List out the features of HTML5.
+
+Features of HTML5 as below :
+It support local storage
+Provide new structural elements such as time, date color , autofocus etc and accessibility improvement such as header, footer nav , article etc
+Improved form and multimedia support
+Provide canvas element for dynamic, interactive graphics
+Support Geolocation API
+
+
+
+2. What are HTML Entities? List out 5 commonly used HTML entities.
+
+HTML Entities - The HTML Entities are strings of text that start with an ampersand symbol (&) and end with a semicolon (;)
+
+List out 5 commonly used HTML entities:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q2</title>
+</head>
+<body style="background-color: #a6e4e4;">
+ 
+  <h1>HTML Entities</h1>
+
+
+  <h3>1.The Ampersand (and) sign: &amp;</h3>
+  <h3>2.The Copyright sign: &copy;</h3>
+  <h3>3.The Greater-than sign: &gt;</h3>
+  <h3>4.The Less-than sign: &lt;</h3>
+  <h3>5.The Registered Trademark sign: &reg;</h3>
+
+
+</body>
+</html>
+
+
+3. What is web accessibility? List some of the assistive devices which play a major role in providing accessibility.
+
+Web Accessibility -Web accessibility refers to the practice of designing and developing websites, web applications, and other digital content that can be accessed and used by people
+with disabilities or different needs, without barriers or limitations.
+There are some assistive devices which play a major role in providing accessibility such as Screen Reader, Voice recognition software, keyboard alternatives, Reading assistant, Graphic Organizer, Switch Device etc.
+
+
+4. List any 3 ways which help us in improving the accessibility of HTML.
+
+Way to improve accessibility -: 
+(i) Alt attribute - The alt attribute is an important attribute in HTML that is used to provide
+alternative text for an image if the image cannot be displayed or if the user is
+using a screen reader to access the page.
+
+<a href="https://www.google.com/" alt="Opening Google Web">Google Link</a>
+<br>
+<img src="sample.jpg" alt="A sample image">
+
+(ii) Title attribute-The title attribute is an important attribute in HTML that can be used to provide
+additional information about an element, such as a link or an image.
+
+<h1 title="This is PW Web Dev Class">Attent PW Class</h1>
+
+(iii) ARIA -ARIA stand for The Accessible Rich Internet Applications (ARIA)
+It comprises roles that establish methods for improving the accessibility of web
+content and web applications, for individuals with disabilities.
+Example 1 - List roles “list”, “listitem”
+<div role="list">
+<div role="listitem">List item 1</div>
+<div role="listitem">List item 2</div>
+<div role="listitem">List item 3</div>
+</div>
+
+5. Write a short note on the tab index.
+
+The tabindex attribute specifies the tab order of an element (when the "tab" button is used for navigating).
+The tabindex attribute is part of the Global Attributes, and can be used on any HTML element.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Index</title>
+</head>
+<body>
+<div tabindex="1"> Hello Word</></div>
+<div tabindex="2"> Welcome to Development Zone</></div>
+<div tabindex="4"> You Have to practice Tag and API uses</></div>
+<p tabindex="4"><b>Note:</b> Try navigating the elements by using the "Tab" button on your keyboard.</p>
+</body>
+</html>
+
+
+6. List any 5 semantic tags in HTML along with their descriptions.
+
+A semantic element clearly describes its meaning to both the browser and the developer.
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+Examples of semantic elements: <form>, <table>, <h1>, <article>, <aside>, <details>
+<figure>, <footer>, <header>, <main>,<section>, <nav>, <article>,<p>
+
+
+(i)  h1 Tag- <h1> tag is used to define the top-level heading of a webpage or a section within it. It represents the most important heading on the page and typically has the largest font size among the heading tag
+
+<h1>PW Skill Recently Accessed Courses</h1>
+
+(ii)  form Tag - The <form> HTML element represents a document section containing interactive controls for submitting information.
+
+<form>
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname" name="lname" value=""> <br>
+  <label for="email"> Email:</label><br>
+  <input type="text" id="lname" name="email" placeholder="abc@gmail.com" value="">
+</form>
+
+
+
+
+ 
+(iii) article - The <article> tag specifies independent, self-contained content.
+
+An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+
+Potential sources for the <article> element:
+
+Forum post
+Blog post
+News story
+
+Eg.
+     <article class="all-browsers">
+    <h1>Most Popular Browsers</h1>
+    <article class="browser">
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web 
+browser today!</p>
+  </article>
+
+
+(iv) main tag -The <main> HTML element represents the dominant content of the <body> of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+
+eg
+    <main>
+        <h1>Most Popular Browsers</h1>
+        <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+        <article class="browser">
+          <h2>Google Chrome</h2>
+          <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular w
+browser today!</p>
+        </article>
+        <article class="browser">
+          <h2>Mozilla Firefox</h2>
+          <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popul
+web browser since January, 2018.</p>
+        </article>
+        <article class="browser">
+          <h2>Microsoft Edge</h2>
+          <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet
+Explorer.</p>
+        </article>
+      </main>
+
+(v) nav tag-The <nav> HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.
+
+<nav>
+<a href="/html/">HTML</a> |
+<a href="/css/">CSS</a> |
+<a href="/js/">JavaScript</a> |
+<a href="/python/">NodeJS</a>
+</nav>
+
+7. What are the benefits of using semantic tags in our webpage?
+
+Using semantic tags in a webpage offers several benefits:
+
+a. Improved Accessibility: Semantic tags provide meaning and structure to the content, which helps assistive technologies, such as screen readers, understand the document better. This enhances the accessibility of your webpage, making it more inclusive and usable for people with disabilities.
+
+b. Search Engine Optimization (SEO): Search engines rely on the structure and semantic meaning of the HTML to understand the content of a webpage. By using semantic tags, you provide clearer signals to search engines about the purpose and relevance of different sections of your webpage. This can potentially improve your search engine rankings and visibility.
+
+c. Code Readability and Maintainability: Semantic tags make the HTML code more readable and self-explanatory. When you use `<header>`, `<nav>`, `<article>`, `<section>`, `<footer>`, and other semantic tags appropriately, it becomes easier for other developers to understand the structure and purpose of your webpage. This improves code maintainability and collaboration.
+
+d. Future-proofing: Semantic tags are designed to represent specific sections or types of content. As HTML evolves, the semantic meaning of these tags is likely to remain consistent. By using semantic tags, you future-proof your webpage, ensuring that it remains relevant and compatible with future web standards and technologies.
+
+e. Styling and Consistency: Semantic tags can be targeted and styled easily using CSS, as they provide clear hooks for styling different sections of the webpage. Additionally, consistent usage of semantic tags across multiple webpages or a website helps create a standardized structure and improves the overall user experience.
+
+Overall, using semantic tags not only benefits accessibility and SEO but also enhances code readability, maintainability, and future compatibility while allowing for easier styling and consistent structure.
+
+8. Create a simple webpage with semantic HTML which has the header, main, and footer sections. The header section must contain links to navigate to different sections of the webpage. The main section must contain three subsections about what is HTML. What is Semantic HTML and a list of commonly used semantic tags? In the end, the footer section must contain your name.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Semantic HTML Example</title>
+<body style="background-color: azure;">
+  <header>
+    <nav>
+      <a href="#html">What is HTML?</a>
+      <a href="#semantic-html">What is Semantic HTML?</a>
+      <a href="#common-semantic-tags">Commonly used Semantic Tags</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <section id="html">
+      <h2>What is HTML?</h2>
+      <p>HTML stands for HyperText Markup Language. It is the standard markup language
+        for creating webpages and defining their structure.</p>
+    </section>
+
+
+    <section id="semantic-html">
+      <h2>What is Semantic HTML?</h2>
+      <p>Semantic HTML refers to using HTML tags that convey meaning and structure to the
+         content they enclose. It helps describe the purpose and significance of different parts of a webpage.</p>
+    </section>
+
+
+    <section id="common-semantic-tags">
+      <h2>commonly used semantic tags</h2>
+      <ul>
+          <li><code>&lt;nav&gt;</code> - Defines a section of navigation links</li>
+        <li><code>&lt;header&gt;</code> - Represents the introductory content or a container
+            for a set of navigational links</li>
+        <li><code>&lt;article&gt;</code> - Represents a self-contained composition that can be
+            independently distributed or reused</li>
+        <li><code>&lt;section&gt;</code> - Defines a standalone section that is semantically
+            related within the document</li>
+        <li><code>&lt;footer&gt;</code> - Represents the footer of a document or a section</li>
+      </ul>
+    </section>
+  </main>
+
+
+  <footer>
+    Ramjee Singh
+  </footer>
+</body>
+</html>
+
+
+9. Create a simple webpage with a form for a user to enter their personal information. The form should contain three input fields with the labels "First Name", "Last Name", and "Email". The first input field should have a tabindex value of 2. The second input field should have a tabindex value of 1. The third input field should have a tabindex value of 4. The form should have a submit button with the label “Submit” and a tabindex value of 3. Observe the behaviors of tab index on your webpage.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC</title>
+</head>
+<body>
+   
+    <h1>User Personal Information</h1>
+ 
+    <form>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" tabindex="2" >
+      <br>
+     
+      <label for="lname">Last Name:</label>
+      <input type="text" id="last-name" tabindex="1" >
+      <br>
+     
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="e.g. xyz@gmail.com" tabindex="4" >
+      <br>
+     
+      <input type="submit" value="Submit" tabindex="3">
+    </form>
+
+
+</body>
+</html>
+
+
+
+
+10. Create a simple webpage which has a table. The table must have 2 columns HTML and HTML5. The table should include minimum three rows describing the differences between HTML and HTML5.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLE</title>
+</head>
+<body style="background-color: beige;">
+    <h1 align="center" style="color: chocolate;">Difference between HTML and HTML5</h1>
+   
+<table border="3" align="center" width="800" height="100">
+   
+ <thead>
+    <tr>
+        <th style="color: blueviolet;">HTML</th>
+        <th style="color: blueviolet;">HTML5</th>
+    </tr>
+ </thead>
+ <tr>
+    <td  align="center" width="800" height="50">HTML stands for HyperText Markup Language.</td>
+      <td  align="center" width="800" height="50">HTML5 is the latest version of HTML.</td>
+ </tr>
+<tr>
+   <td  align="center" width="800" height="50">It didn’t support audio and video without the use of flash player support.</td>
+     <td  align="center" width="800" height="50">It supports audio and video controls with the use of audio and video tags.</td>
+</tr>
+<tr>
+    <td  align="center" width="800" height="50">Does not allow JavaScript to run in browser.</td>
+      <td  align="center" width="800" height="50">Allows JavaScript to run in background. This is possible due to JS Web worker API in HTML5.</td>
+ </tr>
+ 
+ </table>
+</body>
+</html>
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex direction</title>
+    <style>
+        .container1{
+            /* 1 We control all types of direction through container */
+            /* by default direction left to right hota hai mobile me top to bottom */
+            display: flex;
+            /* direction ki default property row hoti hai */
+            border: 1px solid black;
+            color: aliceblue;
+        }
+
+        .container2{
+            display: flex;
+            /* direction ki default property row hoti hai */
+            flex-direction: row-reverse;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: column; */
+            border: 1px solid black;
+            color: #d80909;
+        }
+        .item {
+            width: 50px;
+            height: 50px;
+            background-color: #214be3;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex direction</h1>
+    <div class="container1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <br><br>
+
+    <div class="container2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+</body>
+</html>

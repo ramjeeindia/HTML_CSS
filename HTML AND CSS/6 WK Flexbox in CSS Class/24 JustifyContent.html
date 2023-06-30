@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+    <style>
+        .container{
+          display: flex; 
+          /* wrap is used for responsibe web on any display size  */
+          flex-wrap: wrap;
+          border: 1px solid black; color: aliceblue;  height: 100px;
+        }
+        .item {width: 100px; height: 50px; background-color: #214be3; border: 1px solid black; 
+          /* margin will work under content */
+          margin-top: 20px;
+        }
+        .start{justify-content: flex-start;}
+        .end{justify-content: flex-end;}
+        .between{justify-content: space-between;}
+        .around{justify-content: space-around;}
+        .evenly{justify-content: space-evenly;}
+        .center{justify-content: center;}
+        p{background-color: #d1d4d4;}
+        h2{background-color: aqua;}
+    </style>
+</head>
+<body>
+  <h2>justify-content:-Main Axis means LEFT to RIGHT based distributes space between and around content items of a flex container, and the inline axis of a grid container.</h2>
+    <div>
+        <p>Justify-content:flex-start(default):The items are packed flush to each other toward the start edge</p>
+        <!-- yha sabhi ke ander double class assign kar diya gya -->
+        <div class="container start">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+  
+        <p>Justify-content: flex-end :The items are packed flush to each other toward the end edge</p>
+        <div class="container end">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+  
+        <p>Justify-content: space-between :The items are evenly distributed within the alignment.The first item is flush with the main-start edge, and the last item is flush with the main-end edge.</p>
+        <div class="container between">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+  
+        <p>Justify-content: space-around : The items are evenly distributed.The empty space before the first and after the last item equals half of the space between each pair of adjacent items</p>
+        <div class="container around">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+          <div class="item">5</div>
+        </div>
+  
+        <p>Justify-content: space-evenly : The items are evenly distributed within the alignment.The spacing between each pair of adjacent items, the main-start edge and the first item, and the main-end edge and the last item, are all exactly the same.</p>
+        <div class="container evenly">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+  
+        <p>Justify-content: space-center : The items are packed flush to each other toward the center of the alignment container along the main axis.</p>
+        <div class="container center">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+      </div>
+</body>
+</html>

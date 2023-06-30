@@ -1,0 +1,13 @@
+Sub rr() 	
+	Dim r As Range 	
+	Set r = Selection 	
+	ActiveWorkbook.EnvelopeVisible = True 	
+	With r.Parent.MailEnvelope.Item 	
+	.to = "ramjee.india@gmail.com" 	
+	.cc = "" 	
+	.bcc = "" 	
+	.Subject = "Coding" 	
+	'.Attachments.Add "" 	
+	.send 	
+	End With 	
+	End Sub

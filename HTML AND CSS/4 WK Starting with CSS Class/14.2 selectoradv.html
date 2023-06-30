@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adv Selector</title>
+<style>
+/* Type h1 then : we can view h1:hover  */
+   
+h1:hover{background-color: #8888ad;}
+
+button:focus{background-color: #7fff00;}
+
+/* input:disabled{} USED FOR IF ANY FIELD DISACLE THE COLOUR */
+input:disabled{background-color: #b6afb1;}
+
+/* div ke under style like  div:first-child {} */
+
+div:first-child {background-color: #70ecec;}
+div:last-child {background-color: #9495dd;}
+
+/* n child or nth child for all div:nth-child(n) for selective  child div:nth-child(4n)*/
+
+/* div:nth-child(n) {background-color: #aa6161;} */
+div:nth-child(4n) {background-color: #aa6161;}
+
+
+/* Special selector written as h2:: then after or before the ye jispe v lagega content add kar dega hum "" blank v likh sakte hai*/
+
+h4::after{ 
+    content: "After!";
+    color: #f30d3b;
+    font-size: 30px;
+}
+
+h5::before{ 
+    content: "Test is added in heading";
+    color: #0d11f3;
+    font-size: 30px;
+}
+
+
+
+/* p::first-letter  or p::first-line  */
+
+p::first-letter{
+    background-color: #79da19;
+    font-size: 20px;
+}
+
+</style>
+
+</head>
+<body>
+ <p>After cussor color will change</p>   
+<h1>Advance selector, pseudo selectors like hover</h1>
+
+<p>after click color focus change utton:focus{}</p>
+
+<input type="checkbox" name="" id="">
+<button>Submit</button>
+
+<!--Hover Effect  -->
+<h2>Hover</h2>
+<p>written as input type="text" required="true" ...input type="text" disabled="true" </p>
+    <button>Focus</button>
+    <input type="text" required="true" />
+    <input type="checkbox" />
+    <input type="text" disabled="true" />
+<p>n child or nth child for all div:nth-child(n) for selective  child div:nth-child(4n)</p>
+    <div>
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+      <div>Four</div>
+      <div>Five</div>
+      <div>Six</div>
+    </div>
+
+    <h4>Pseudo before and after selector</h4>
+    <h5>First letter selector</h5>
+    
+    <p>few selector wrintten as for first letter p::first-letter  for first letter p::first-line</p>
+    <p class="firstL">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+      consequuntur error ratione molestiae dignissimos earum quisquam
+      aspernatur, repudiandae dicta sapiente.
+    </p>
+
+
+</body>
+</html>

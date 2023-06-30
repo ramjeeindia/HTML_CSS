@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h3,
+      p,
+      li {
+        background-color: #720505;
+        color: aliceblue;
+        border: 5px solid #acac07;
+        padding: 10px;
+      }
+      .item {
+        /* display: none;     */
+        /* none me area web ka nahi lega jabki opasity me area lega hidden v rahega */
+
+        /* display: inline;     */
+        /* display: inline-block;     */
+        display: flex;
+
+        /* none  se kuch v nahi ,inline se block level par v inline, inline-block yadi height v diya ho to inline me show ho height ke sath, flex me block level me diye gaye height ke anusar adjust*/
+        background-color: #720505;
+        color: aliceblue;
+        border: 5px solid #acac07;
+        padding: 10px;
+      }
+      .item2 {
+        height: 100px;
+      }
+      img {
+        height: 300px;
+        /* display: none; */
+        /* none me area web ka nahi lega jabki opasity me area lega hidden v rahega */
+
+        /* visibility: hidden; */
+        /* opacity: none; */
+        /* isme area web ka lega hidden v rahega */
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Normal Layout</h2>
+
+    <h3>Normal Layout in color</h3>
+    <p>
+      Elements are placed in the order in which they appear in the HTML
+      document, and their positions are determined by their default positioning
+      properties.
+    </p>
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+
+    <div>
+      <div class="item1 item">Item 1</div>
+      <div class="item2 item">Item 2</div>
+      <div class="item3 item">Item 3</div>
+    </div>
+
+    <h1>Lorem, ipsum dolor.</h1>
+    <p>Text before image</p>
+    <img src="pexels-hitesh-choudhary-3532546.jpg" width="500px" />
+    <p>Text after image</p>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!-- Que - 2
+The landing page designed in question 01 showcases an impressive layout and design. However, it lacks a crucial component - a navigation bar. Without a navigation bar, users may find navigating through different sections of the website challenging. To address this issue, design a navigation bar using CSS Grid, as shown in the image below as of now there is no need to update the navigation links. Navigation Bars enhance user experience, improve usability, and ensure easy access to various pages and content. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 2</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 10vh;
+  padding: 0 10px;
+}
+
+nav > .logo > img {
+  object-fit: cover;
+  width: 20%;
+  height: 100%;
+  padding: 10px;
+}
+
+nav > .links {
+  align-self: center;
+}
+
+nav > .links > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+nav > .links > ul > li {
+  list-style: none;
+}
+nav > .links > ul > li > a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+nav > .button {
+  align-self: center;
+  justify-self: end;
+}
+
+nav > .button > button {
+  background-color: #0fdb6b;
+  padding: 5px 35px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 2px 2px 6px 0px #000000;
+
+}
+.container {
+  display: grid;
+  grid-template-columns: 60% 30% 10%;
+  height: 90vh;
+  overflow: hidden;
+}
+.container > .information {
+  padding: 0 10%;
+  align-self: center;
+}
+.container > .information > h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.container > .information > p {
+  margin: 5% 0;
+}
+
+.container > .information > button {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 25px;
+  border: none;
+}
+.container > .image > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.color-displayer {
+  background-color: #ffff00;
+}
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="https://graphicsfamily.com/wp-content/uploads/edd/2023/02/Restaurant-Logo-Design-2-1180x664.jpg" alt="resturant-logo" />
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="button">
+        <button>Login</button>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="information">
+        <h1>Healthy Food</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolorem
+          excepturi saepe exercitationem tenetur? Recusandae ipsam, optio magnam
+          est consectetur nostrum nisi dolores facilis ratione repudiandae omnis
+          accusamus, maxime earum fuga maiores? Consectetur ea dolorem officia
+          exercitationem quibusdam eum, ut doloribus. Dolores quisquam
+          cupiditate exercitationem a quas quod voluptates eum eveniet
+          accusantium deserunt nulla, eos perferendis, commodi doloremque iure
+          ipsum!
+        </p>
+        <button>Read More</button>
+      </div>
+      <div class="image">
+        <img src="https://www.macspharmacy.com/wp-content/uploads/2019/08/vegetables.jpg" alt="food-banner" />
+      </div>
+      <div class="color-displayer"></div>
+    </div>
+  </body>
+</html>

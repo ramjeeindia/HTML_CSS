@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS mini page</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+.navbar{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    box-shadow: 0px 2px 10px #00000033;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 20px 0px;
+    vertical-align: middle;
+}
+
+.nav-item{
+    display: inline-block;
+    margin: 0 20px;
+    padding-bottom: 0px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #535353;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: black;
+}
+
+article h1{
+    font-size: 40px;
+}
+
+.content {
+    background: linear-gradient(#e66465, #9198e5);
+    padding: 10px 80px;
+    
+}
+.content > section {
+    margin: 100px 0px;
+}
+
+.lang-image img{
+    width: 200px;
+    height: 200px;
+}
+
+.float-right{
+    float: right;
+    margin-left: 50px;
+}
+
+.float-left{
+    float: left;
+    margin-right: 50px;
+}
+.bot-icon{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.bot-icon img{
+    width: 100px;
+}
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">References</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Docs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Blogs</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- content -->
+
+    <main class="content">
+        <section>
+            <div class="lang-image float-right">
+                <img src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png" alt="html image">
+            </div>
+            <article>
+                <h1>HTML</h1>
+                <p>
+                    CSS (Cascading Style Sheets) is the code that styles web content.
+                    CSS basics walks through what you need to get started. We'll answer
+                    questions like: How do I make text red? How do I make content
+                    display at a certain location in the (webpage) layout? How do I
+                    decorate my webpage with background images and colors? What is CSS?
+                    Like HTML, CSS is not a programming language. It's not a markup
+                    language either. CSS is a style sheet language. CSS is what you use
+                    to selectively style HTML elements. For example, this CSS selects
+                    paragraph text, setting the color to red
+                  </p>
+            </article>
+        </section>
+        <section>
+            <div class="lang-image float-left">
+                <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" alt="html image">
+            </div>
+            <article>
+                <h1>CSS</h1>
+                <p>
+                    CSS (Cascading Style Sheets) is the code that styles web content.
+                    CSS basics walks through what you need to get started. We'll answer
+                    questions like: How do I make text red? How do I make content
+                    display at a certain location in the (webpage) layout? How do I
+                    decorate my webpage with background images and colors? What is CSS?
+                    Like HTML, CSS is not a programming language. It's not a markup
+                    language either. CSS is a style sheet language. CSS is what you use
+                    to selectively style HTML elements. For example, this CSS selects
+                    paragraph text, setting the color to red
+                  </p>
+            </article>
+        </section>
+        <section>
+            <div class="lang-image float-right">
+                <img src="https://logosdownload.com/logo/javascript-logo-big.png" alt="html image">
+            </div>
+            <article>
+                <h1>Javascript</h1>
+                <p>
+                    JavaScript (JS) is a lightweight, interpreted, or just-in-time
+                    compiled programming language with first-class functions. While it
+                    is most well-known as the scripting language for Web pages, many
+                    non-browser environments also use it, such as Node.js, Apache
+                    CouchDB and Adobe Acrobat. JavaScript is a prototype-based,
+                    multi-paradigm, single-threaded, dynamic language, supporting
+                    object-oriented, imperative, and declarative (e.g. functional
+                    programming) styles.
+                  </p>
+            </article>
+        </section>
+    </main>
+
+    <!-- chat bot -->
+    <div class="bot-icon"><img src="https://cdn-icons-png.flaticon.com/256/1698/1698535.png" alt=""></div>
+</body>
+</html>

@@ -1,10 +1,10 @@
 {
-  "workbench.colorTheme": "Tomorrow Night Blue",
+  "workbench.colorTheme": "Visual Studio Light - C++",
   "security.workspace.trust.untrustedFiles": "open",
   "[sql]": {
-      "editor.defaultFormatter": "ms-mssql.mssql"
+      "editor.defaultFormatter": "mtxr.sqltools"
   },
-  "editor.columnSelection": true,
+  "editor.columnSelection": false,
   "workbench.startupEditor": "none",
   "emmet.preferences": {},
   "emmet.includeLanguages": {"html": "html"},

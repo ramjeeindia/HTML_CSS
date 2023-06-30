@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;color: aliceblue;height: 15vh;
+        }
+        .item{
+            width: 100px;
+            border: 1px solid black; background-color: #144bc9;
+        }
+        .stretch{align-items: stretch;}
+        .start{align-items: flex-start;        }
+        .end{align-items: flex-end;        }
+        .center{align-items: center;        }
+        .baseline{align-items: baseline;        }
+        p{background-color: #42c53e;}
+    </style>
+</head>
+<body>
+  <h1>align-items define TOP to BOTTOM position if container have height</h1>
+<p>The align-items property specifies the default alignment for items inside a flexbox or grid container.In a flexbox container, the flexbox items are aligned on the cross axis, which is vertical by default (opposite of flex-direction).
+  In a grid container, the grid items are aligned in the block direction. For pages in English, block direction is downward and inline direction is left to right.</p>
+    
+    <p>align-items:stretch(default)</p>
+<!-- pura space height and width leta hai -->
+      <div class="container stretch">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </div>
+
+      <p>align-items: flex-start</p>
+        <!-- TOP se Utna hi space lega jitna jarurat hai se 1, 2 3 four ke liye -->
+
+      <div class="container start">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </div>
+
+      <p>align-items: end</p>
+        <!-- Bottom se Utna hi space lega jitna jarurat hai se 1, 2 3 four ke liye -->
+
+      <div class="container end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </div>
+
+      <p>align-items: center</p>
+<!-- TOP and BOTTOM se center me jitna jarurat hai se 1, 2 3 four ke liye -->
+      <div class="container center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </div>
+
+      <p>align-items:baseline</p>
+<!-- base line me chala jata hai end ke jaise -->
+      <div class="container baseline">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <title>Flex Wrap</title>
+    <style>
+      .container {
+        display: flex;
+        border: 1px solid black;
+        color: aliceblue;
+        align-items: center;
+
+        /* Wrap reverse se last ka item top par phir second last aise ulta wrap hoga */
+        /* flex-wrap: wrap-reverse; */
+
+        /* Wrap hone par content height ke according wrap hote rhta hai  */
+        flex-wrap: wrap;
+
+        /* important hai ki no wrap se container ke bahar chala jata hai */
+        /* flex-wrap: nowrap; */
+      }
+      .item {
+        width: 250px;
+        height: 50px;
+        background-color: #214be3;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+      Flex Wrap : flex items are forced onto one line or can wrap onto multiple
+      lines. If wrapping is allowed, it sets the direction that lines are
+      stacked.
+    </h2>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+  </body>
+</html>

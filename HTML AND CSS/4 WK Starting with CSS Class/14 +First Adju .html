@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Adjuscent Selector</title>
+    <style>
+      .bigbox + .adj {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>" - ", " > "," + " ," ` "</h1>
+    <code> Syntax used :  </code>
+    <p>
+      This means all seleceted element just near parent </mark>
+    </p>
+    <div class="bigbox">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box3</div>
+    </div>
+    <div class="adj">This is first element after parent element then it will chnage</div>
+    <div class="adj">This is second element after parent element </div>
+    <div>div without class</div>
+    <div class="adj">This is third element after parent element </div>
+
+    <div>
+      <div class="adj">under div then div This is first element  
+              </div>
+      </div>
+  </body>
+</html>

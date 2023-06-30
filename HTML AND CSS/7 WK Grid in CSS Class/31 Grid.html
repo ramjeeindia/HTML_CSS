@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid container</title>
+<style>
+.container{
+    display: grid;
+    /* grid-template-columns: 100px 200px 
+    300px; */
+/* we can also define */
+/* grid-template-columns: auto auto auto; */
+
+/* we can define as fraction */
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 100px 200px;
+}
+
+div{
+    border: 1px solid black
+}
+.item{
+    background-color: aqua;
+}
+
+</style>
+
+</head>
+<body>
+<div class="container">
+    <div class="item">Box 1</div>
+    <div class="item">Box 2</div>
+    <div class="item">Box 3</div>
+    <div class="item">Box 4</div>
+    <div class="item">Box 5</div>
+    <div class="item">Box 6</div>
+</div> 
+
+
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOAT</title>
+    <style>
+        .float-div{
+            float: left;
+            /* jaise hi float left karenge to baki ke element paragraph right ho jate hai  */
+            width: 170px;
+            height: 170px;
+            background-color: #ae9fcf;
+            margin-left: 20px;
+        }
+        .float-left{
+            float: left;
+            width: 170px;
+            height: 170px;
+            background-color: #c5b9b9;
+            border: 15px solid black;
+            margin-left: 20px;
+        }
+        .float-right{
+            float: right;
+            width: 170px;
+            height: 270px;
+            background-color: #abd633;
+            border: 15px solid black;
+            margin-right: 20px;
+        }
+        .para{
+           clear:none
+           /* clear:left */
+           /* clear:right  */
+           /* clear:none  */
+           /* /* left ke according text clear krna ho to left , right ke according text clear krna ho to right, dono ke lite both and default bich me hi rhne dena ho to none */ */
+        }
+
+.float-left2{
+     float: left;
+     width: 170px;
+     height: 170px;
+     background-color: #b41665;
+     border: 15px solid black;
+     margin-left: 20px;
+ }
+ .float-right2{
+     float: right;
+     width: 170px;
+     height: 270px;
+     background-color: #0c7927;
+     border: 15px solid black;
+     margin-right: 20px;
+ }
+ .para2{
+    clear:both}
+
+    .float-left3{
+     float: left;
+     width: 170px;
+     height: 170px;
+     background-color: #b41665;
+     border: 15px solid black;
+     margin-left: 20px;
+ }
+ .float-right3{
+     float: right;
+     width: 170px;
+     height: 270px;
+     background-color: #0c7927;
+     border: 15px solid black;
+     margin-right: 20px;
+ }
+ .para3{
+    clear:left}
+
+    </style>
+</head>
+<body>
+
+    <h1>Text float in right according to height and width of div element</h1>
+    <p>
+        <div class="float-div">LEFT</div>
+ <p>
+ ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+      </p> 
+<!--        -->
+<br><br><br><br><br><br><br><br><br><hr>
+<h1>Text float in left /right according to height and width of div element and paragraph in center as default</h1>
+<!--  -->
+      <div>
+        <div class="float-left">LEFT</div>
+        <div class="float-right">RIGHT</div>
+        <p class="para">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+          scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+          congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
+          aliquet.
+        </p>
+      </div>
+  
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+<h1>Text float in left /right according to height and width of div element</h1>
+
+      <div>
+        <div class="float-left2">LEFT</div>
+        <div class="float-right2">RIGHT</div>
+        <p class="para2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+          scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+          congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
+          aliquet.
+        </p>
+      </div>
+ 
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+
+<h1>Left clear  </h1>
+
+      <div>
+        <div class="float-left3">LEFT</div>
+        <div class="float-right3">RIGHT</div>
+        <p class="para3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+          scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices 
+          congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
+          aliquet.
+        </p>
+      </div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic</title>
+    <style>
+      /* written as header > a {} only select direct child noth child of child */
+      header > a {
+        background-color: #9854d8;
+      }
+      /* Sibling img~p{} */
+      img ~ p {
+        background-color: #e7c086;
+      }
+      /* if we target adjusent the style as video+p{} */
+      video + p {
+        background-color: #aa9a41;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- header>a{} -->
+      <a href="#">Google</a>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <!-- again use a tag -->
+          <a href="#">Logo</a>
+        </ul>
+      </nav>
+      <!-- this is under header also apply header>a{} style -->
+      <a href="#">Bing</a>
+      <hr />
+    </header>
+    <!-- Sibling  witten as img~p{}-->
+    <div>
+      <img
+        src="https://samplelib.com/lib/preview/png/sample-bumblebee-400x300.png"
+        alt="Image"
+      />
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <!-- we can multiple assign sibling style will also work -->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <!--  but if we write in another dic then style will not work -->
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+        architecto?
+      </p>
+    </div>
+    <hr />
+    <p>
+      if we target adjusent means just after video tag then style as video+p{}
+    </p>
+    <div>
+      <video
+        controls
+        src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4"
+        height="100px"
+      >
+        Video
+      </video>
+      <p>Click Here</p>
+      <p>Change me1</p>
+      <p>Change me2</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .box{
+            height: 550px;
+            /*  we can define colour up to desired pixel value*/
+
+
+            background-image: radial-gradient(circle, #ff0000 50px,#0000ff 150px, #008000 300px);
+
+            /* background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c); */
+            background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+
+            /* background: radial-gradient(ellipse at top, #e66465, transparent),
+                        radial-gradient(ellipse at bottom, #4d9f0c, transparent); */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+
+<style>
+    img{ display: flex;
+        flex-direction: column;
+    width:300px;
+    height: 300px;
+}
+.Image1{
+    /*  define bl */
+    filter: blur(5px);
+}
+
+.Image2{
+    filter: invert();
+}
+
+.Image3{
+    filter:brightness(0.4);
+}
+
+.Image4{
+    filter:grayscale(0.5);
+}
+
+.Image5{
+    /* all color will adjust arount element */
+    filter:hue-rotate(90deg);
+}
+
+.image6{
+    filter: drop-shadow(30px 10px 2px #e23f3f) hue-rotate(90deg)
+            drop-shadow(30px 10px 2px #e23f3f);
+}
+</style>
+<body>
+    <h1>Filter Property:Play with colour </h1>
+
+<div class="contaniner">
+    <h2>filter: blur(5px)</h2>
+    <img class="Image" src="https://images.pexels.com/photos/12513116/pexels-photo-12513116.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+    <img class="Image1" src="https://images.pexels.com/photos/12513116/pexels-photo-12513116.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+
+<h2>filter: invert();</h2>
+    <img class="Image2" src="https://images.pexels.com/photos/12513116/pexels-photo-12513116.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+
+<h2>filter:brightness(0.4);</h2>
+<img class="Image" src="https://images.pexels.com/photos/16972528/pexels-photo-16972528/free-photo-of-sea-flight-bird-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+    <img class="Image3" src="https://images.pexels.com/photos/16972528/pexels-photo-16972528/free-photo-of-sea-flight-bird-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+
+<h2>filter:grayscale();</h2>
+    <img class="Image" src="https://images.pexels.com/photos/17332521/pexels-photo-17332521/free-photo-of-flight-people-vehicle-freedom.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+
+    <img class="Image4" src="https://images.pexels.com/photos/17332521/pexels-photo-17332521/free-photo-of-flight-people-vehicle-freedom.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+
+    <h2>filter:hue-rotate(90deg);</h2>
+    <img class="Image" src="https://images.pexels.com/photos/15464846/pexels-photo-15464846/free-photo-of-jeep-on-desert-on-shore.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+
+    <img class="Image5" src="https://images.pexels.com/photos/15464846/pexels-photo-15464846/free-photo-of-jeep-on-desert-on-shore.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+
+<h2>dropshadow</h2>
+
+   <img class="Image6" src="https://images.pexels.com/photos/17332521/pexels-photo-17332521/free-photo-of-flight-people-vehicle-freedom.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+
+    <img class="Image6" src="https://images.pexels.com/photos/17332521/pexels-photo-17332521/free-photo-of-flight-people-vehicle-freedom.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+</div>
+</div>   
+</body>
+</html>

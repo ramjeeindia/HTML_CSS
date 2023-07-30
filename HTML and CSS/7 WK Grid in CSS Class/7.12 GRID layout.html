@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>layout</title>
+	<style>
+		body{
+	margin:0;
+	font-family: sans-serif;
+	background-color: #dddddd;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	max-width: 1140px;
+	background-color: #ffffff;
+	height:auto;
+	margin:40px auto;
+	padding:20px;
+}
+h1{
+	font-size:30px;
+	margin:0;
+}
+.clear{
+	clear: both;
+}
+nav{
+ float:left;
+ width: 100%;
+ background-color:#dddddd; 
+ text-align: center;
+ padding:30px 15px;
+ margin-bottom:20px;
+}
+
+header{
+ float:left;
+ width: 100%;
+ background-color:#dddddd; 
+ text-align: center;
+ padding:130px 15px;
+ margin-bottom:20px;
+}
+
+.section1{
+ float:left;
+ width: 100%;
+ background-color:#dddddd; 
+ text-align: center;
+ padding:50px 10px;
+ margin-bottom:20px;
+}
+
+.section1 .content{
+	float:left;
+	width: 100%;
+	margin-top:60px;
+}
+
+.section1 .content .card{
+width:25%;
+float: left;
+padding:0px 10px;
+}
+
+.section1 .content .card .box{
+	background-color:gray;
+	font-size:30px;
+	color:#fff;
+	padding:60px 15px;
+}
+
+.section2{
+ float:left;
+ width: 100%;
+ background-color:#dddddd; 
+ text-align: center;
+ padding:50px 10px;
+ margin-bottom:20px;
+}
+
+.section2 .content{
+float: left;
+width: 100%;
+margin-top:60px;
+}
+
+.section2 .content .left{
+	width: 50%;
+	float: left;
+	padding:0px 10px;
+
+}
+.section2 .content .left .card{
+	padding:200px 15px;
+	font-size:30px;
+	color:#fff;
+	background-color: gray;
+}
+.section2 .content .right{
+	width: 50%;
+	float: left;
+	padding: 0px 10px;
+}
+.section2 .content .right .card{
+	padding:48px 15px;
+	font-size:30px;
+	color:#fff;
+	background-color: gray;
+	margin-bottom:20px;
+}
+
+
+footer{
+ float:left;
+ width: 100%;
+ background-color:#dddddd; 
+ text-align: center;
+ padding:50px 10px;
+ 
+}
+
+
+	</style>
+</head>
+<body>
+
+  <div class="container">
+  	   <nav>
+  	   	  <h1>Navigation</h1>
+  	   </nav>
+
+  	   <header>
+  	   	  <h1>Header</h1>
+  	   </header>
+
+  	   <section class="section1">
+  	   	     <h1>Section1</h1>
+  	   	     <div class="content">
+  	   	     	 <div class="card">
+  	   	     	 	  <div class="box">
+  	   	     	 	  	  Card1
+  	   	     	 	  </div>
+  	   	     	 </div>
+  	   	     	 <div class="card">
+  	   	     	 	  <div class="box">
+  	   	     	 	  	  Card2
+  	   	     	 	  </div>
+  	   	     	 </div>
+  	   	     	 <div class="card">
+  	   	     	 	  <div class="box">
+  	   	     	 	  	  Card3
+  	   	     	 	  </div>
+  	   	     	 </div>
+  	   	     	 <div class="card">
+  	   	     	 	  <div class="box">
+  	   	     	 	  	  Card4
+  	   	     	 	  </div>
+  	   	     	 </div>
+  	   	     </div>
+  	   </section>
+
+  	   <section class="section2">
+  	   	  <h1>Section2</h1>
+  	   	   <div class="content">
+  	   	   	   <div class="left">
+  	   	   	   	  <div class="card">
+  	   	   	   	  	 card1
+  	   	   	   	  </div>
+  	   	   	   </div>
+  	   	   	   <div class="right">
+  	   	   	   	  <div class="card">
+  	   	   	   	  	  card2
+  	   	   	   	  </div>
+  	   	   	   	  <div class="card">
+  	   	   	   	  	  card3
+  	   	   	   	  </div>
+  	   	   	   	  <div class="card">
+  	   	   	   	  	  card4
+  	   	   	   	  </div>
+  	   	   	   </div>
+  	   	   </div>
+  	   </section>
+       <footer>
+       	 <h1>Footer</h1>
+       </footer>
+  	   <div class="clear">
+  	   </div>
+  </div>
+
+</body>
+</html>

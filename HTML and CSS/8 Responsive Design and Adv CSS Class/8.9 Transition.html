@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap:1rem;
+    }
+
+    a{
+        text-decoration: none;
+        flex-grow: 1;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+
+/* There are 3 main property  */
+        /* transition-property: all; */
+        /* transition-duration: 2s; */
+        /* transition-timing-function: ease-in-out; */
+transition: all 2s ease-in-out;
+
+    }
+
+    a:hover,a:focus{
+        background-color: blueviolet;
+        border: 1px solid black;
+    }
+
+.ballon{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: blue;
+    transition: all 0.5s ease-in;
+    margin: 100px;
+}
+
+.ballon:hover{
+    transform: scale(2);
+}
+</style>
+<body>
+    
+    <nav class="container">
+        <a href="">Home </a>
+        <a href="">About</a>
+        <a href="">Product</a>
+        <a href="">Contact</a>
+    </nav>
+
+    <h2>Transition property define which condition effect apply </h2>
+
+transition-property: margin-right; <br>
+transition-property: margin-right, color; <br>
+transition-property: all; <br>
+transition-property: none; <br>
+
+<h2>transition-duration: 2s; define in ms or s</h2>
+
+<h2>transition-timing-function</h2>
+transition-timing-function: ease;
+transition-timing-function: ease-in;
+transition-timing-function: ease-out;
+transition-timing-function: ease-in-out;
+transition-timing-function: linear;
+transition-timing-function: step-start;
+transition-timing-function: step-end;
+
+<hr>
+ease
+Equal to cubic-bezier(0.25, 0.1, 0.25, 1.0), the default value, increases in velocity towards the middle of the transition, slowing back down at the end.
+<br>
+linear
+Equal to cubic-bezier(0.0, 0.0, 1.0, 1.0), transitions at an even speed.
+<br>
+ease-in
+Equal to cubic-bezier(0.42, 0, 1.0, 1.0), starts off slowly, with the transition speed increasing until complete.
+<br>
+ease-out
+Equal to cubic-bezier(0, 0, 0.58, 1.0), starts transitioning quickly, slowing down as the transition continues.
+<br>
+ease-in-out
+Equal to cubic-bezier(0.42, 0, 0.58, 1.0), starts transitioning slowly, speeds up, and then slows down again.
+
+
+<h1>Example 2 if hover then skale increase with transition effect</h1>
+
+<div class="ballon"></div>
+
+</body>
+</html>

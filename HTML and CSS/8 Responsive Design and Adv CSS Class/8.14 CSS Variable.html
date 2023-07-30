@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable</title>
+  </head>
+  <style>
+    .button {
+        /* Hear --color define as variable and use in border color, color, hover */
+      --color: green;
+      padding: 0.5rem;
+      border: 1px solid var(--color);
+      color: var(--color);
+    }
+    .button:hover {
+      --color: blue;
+    }
+    /* btn red display red without hover */
+    .btn_red {
+      --color: red;
+    }
+  </style>
+  <body>
+    <div>
+      <a class="button" href="#"> Button Green</a>
+      <a class="button btn_red" href="#"> Button Red</a>
+      <a class="button" href="#"> Button Hover On</a>
+    </div>
+  </body>
+</html>

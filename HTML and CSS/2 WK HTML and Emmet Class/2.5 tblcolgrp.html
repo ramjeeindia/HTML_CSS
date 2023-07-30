@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>basic table</title>
+  </head>
+  <style>
+    table {
+      /* boder collapse will remove default table border style */
+      border-collapse: collapse;
+      width: 50%;
+      text-align: center;
+    }
+    th,
+    td {
+      border: 2px dotted #ff0000;
+      padding: 10px;
+    }
+    th {
+      background-color: #b68a52;
+      font-size: xx-large;
+    }
+  </style>
+  <body>
+    <h1>colgroup</h1>
+    <table>
+        <!-- this will style first two column -->
+      <colgroup>
+        <col span="2" style="background-color: darkslategray" />
+      </colgroup>
+      <tr>
+        <th>Product Name</th>
+        <th>Brand</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Product 1</td>
+        <td>Brand 1</td>
+        <td>RS 100 INR</td>
+      </tr>
+      <tr>
+        <td>Product 2</td>
+        <td>Brand 2</td>
+        <td>RS 300 INR</td>
+      </tr>
+      <tr>
+        <td>Product 3</td>
+        <td>Brand 3</td>
+        <td>RS 400 INR</td>
+      </tr>
+      <tr>
+        <td>Product 4</td>
+        <td>Brand 4</td>
+        <td>RS 200 INR</td>
+      </tr>
+      <tr>
+        <td>Product 5</td>
+        <td>Brand 5</td>
+        <td>RS 900 INR</td>
+      </tr>
+      <tfoot>
+        <tr>
+            <th colspan="2">Totals</th>
+            <td>1,900</td>
+        </tr>
+    </tfoot>
+    </table>
+  </body>
+</html>

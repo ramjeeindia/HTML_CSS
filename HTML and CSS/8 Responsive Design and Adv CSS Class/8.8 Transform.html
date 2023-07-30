@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+</head>
+<style>
+* body{ background-color: aquamarine;}
+    
+img{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+h2{
+    padding: 10px; color: blue;
+}
+/* Define movement as per axis using translate property */
+.Image1{transform: translate(400px,40px);
+
+/* we can also define using translateY and translateX */
+/* transform: translateY(40px);transform:translateX(400px); */
+
+}
+
+
+/* =============================transform scale  properly will scale zoom in or out the element=== */
+.Image2{
+transform: scale(1.2,1.5);
+
+/* we can also define as per x and y axis */
+/* transform: scaleY(1.5); transform: scaleX(1.2); */
+}
+
+
+/* =============================transform rotate  properly will rotate the element in degree=== */
+.Image3{
+transform: rotate(-30deg);
+display: inline-block;
+
+/* transform: rotateX('angle');transform: rotateY('angle'); */
+/* transform: rotateX(30deg);transform: rotateY(-20deg); */
+
+
+}
+
+.Image4{
+transform: rotate(30deg);
+display: inline-block;
+}
+
+/* =============transform skew  properly will rotate the element in degree=== */
+
+.Image5{
+transform: skew(30deg);
+display: inline-block;
+
+/* transform: skewX();transform:skewY(); */
+}
+
+.Image6{
+transform: skew(30deg);
+display: inline-block;
+}
+
+.Image7{
+    margin-top: 300px;
+    /* transform: matrix(); */
+    transform: matrix(1, 2, 3, 4, 5, 6);
+/* transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); */
+}
+
+
+</style>
+<body>
+    <h1>Move Element to X and Y axis </h1>
+
+    <!-- translate property apply -->
+<div class="contaniner">
+    <h2>translate: moves an element from its current position</h2>
+
+    <img class="Image1" src="https://images.pexels.com/photos/12513116/pexels-photo-12513116.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+
+<h2>scale: increases or decreases the size of an element </h2>
+
+    <!-- scale property apply -->
+    <img class="Image2" src="https://images.pexels.com/photos/12513116/pexels-photo-12513116.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+
+
+
+    <!-- rotate property apply -->
+    
+<h2>rotate : rotates an element clockwise or counter-clockwise</h2>
+    <img class="Image3" src="https://images.pexels.com/photos/16972528/pexels-photo-16972528/free-photo-of-sea-flight-bird-beach.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+
+    <img class="Image4" src="https://images.pexels.com/photos/17332521/pexels-photo-17332521/free-photo-of-flight-people-vehicle-freedom.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+
+
+
+<h2>skew : skews an element along the X-axis </h2>
+    <!-- skew property apply-->
+   
+    <img class="Image5" src="https://images.pexels.com/photos/15464846/pexels-photo-15464846/free-photo-of-jeep-on-desert-on-shore.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+
+    <img class="Image6" src="https://images.pexels.com/photos/12513116/pexels-photo-12513116.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+
+<h2>matrix :</h2>
+
+<!-- matrix -->
+    <img class="Image7" src="https://images.pexels.com/photos/17332521/pexels-photo-17332521/free-photo-of-flight-people-vehicle-freedom.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+</div>
+</div>
+
+</body>
+</html>

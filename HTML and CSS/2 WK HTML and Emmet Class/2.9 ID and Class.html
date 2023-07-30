@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Fill ID and Class</title>
+</head>
+<body>
+
+    <!-- div.container>div.box$*3    ...single $ will produce class as box1 , box2-->
+
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+
+        <!-- div.container>div.box. box$*3    ... will produce class as box box1, box box2,box box3 -->
+
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+
+<!-- div.container>div.box$$*3    double $$ will produce class as 001 ,002 -->
+
+<div class="container">
+    <div class="box01"></div>
+    <div class="box02"></div>
+    <div class="box03"></div>
+</div>
+
+
+    <!-- div.container>div.item$@-*3      Output class will display as 3, 2 ,1 -->
+    
+
+    <div class="container">
+        <div class="item3"></div>
+        <div class="item2"></div>
+        <div class="item1"></div>
+    </div>
+
+    <!-- div.container>div.item$@-*3      Output class will display start from 3 and upto given nos -->
+
+    <div class="container">
+        <div class="item5"></div>
+        <div class="item4"></div>
+        <div class="item3"></div>
+    </div>
+
+</body>
+</html>

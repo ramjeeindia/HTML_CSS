@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+</head>
+
+<style>
+.box{height: 100vh;}
+
+h1{color: #ff0000;}
+    @media screen and (max-width:576px){
+       .box{background-color: #f4f4f8;}
+       h1{color: #bbce50;}
+    }
+
+    @media screen and (max-width:900px){
+       .box{background-color: #4949eb;}
+       h1{color: #c94062;}
+    }
+/*  if we go with max-width then all below propery will overwrite */
+    @media screen and (max-width:1200px){
+       .box{background-color: #df5170;}
+       h1{color: #830ed1;}
+    }
+
+
+</style>
+
+<body>
+    <div class="box">
+        <h1 class="screen">Width :</h1>
+      </div>
+</body>
+</html>

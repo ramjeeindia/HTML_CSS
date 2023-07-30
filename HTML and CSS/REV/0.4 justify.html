@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justify Content</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .bigbox {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: brown;
+        /* Space is also written as  width: calc (100vw - 20px)*/
+        width: 30vw;
+        height: 80vh;
+        border: 1px solid #000000;
+        
+        /* justify content:-Main Axis means LEFT to RIGHT based distributes space */
+        justify-content: center;
+
+        /* align content property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis */
+        align-items: center;
+
+        /* align items define TOP to BOTTOM position if container have height */
+        align-content: center;
+      }
+
+      .photo {
+        width: 150px;
+        height: 90px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bigbox">
+      <!-- Sortcut Command img [src="images/$.jpg"]*6 -->
+      <img
+        class="photo pic1"
+        src="https://a0.muscache.com/im/pictures/airflow/Hosting-50113248/original/385f82f5-a106-438a-a014-132aea9d255a.jpg?im_w=720"
+        alt="pic1"
+      />
+
+      <img
+        class="photo pic2"
+        src="https://a0.muscache.com/im/pictures/miso/Hosting-26300485/original/ee94e6c1-6ebc-496e-af84-1502edd1b759.jpeg?im_w=720"
+        alt="pic2"
+      />
+
+      <img
+        class="photo pic3"
+        src="https://a0.muscache.com/im/pictures/miso/Hosting-754944155491608444/original/29df9205-969b-4b16-875a-dde8c681133c.jpeg?im_w=720"
+        alt="pic3"
+      />
+
+      <img
+        class="photo pic4"
+        src="https://a0.muscache.com/im/pictures/miso/Hosting-18296767/original/db5596b9-59fe-49ce-8412-93358f8d91ed.jpeg?im_w=720"
+        alt="pic4"
+      />
+
+      <img
+        class="photo pic5"
+        src="https://a0.muscache.com/im/pictures/3a0edcbf-4148-4939-bac6-2cf92d21d80c.jpg?im_w=720"
+        alt="pic5"
+      />
+
+      <img
+        class="photo pic6"
+        src="https://a0.muscache.com/im/pictures/miso/Hosting-676044415326884478/original/e32429f8-56bd-4ba1-a98a-46efc64e3e69.jpeg?im_w=720"
+        alt="pic6"
+      />
+    </div>
+  </body>
+</html>

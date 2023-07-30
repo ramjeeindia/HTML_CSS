@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-box</title>
+
+<style>
+
+*{background-color: #ce70ba;box-sizing: border-box;}
+
+.bigbox{background-color: brown; width: 600px;}
+
+.box{width: 200px; background-color: chartreuse; 
+    display: inline-block; 
+    border: 1px solid black; padding: 5px;
+    /* The Default Margin in border box is 3.5px  */
+    /* margin-left: -3.5px; */
+}
+    
+.box1{background-color: blue; }
+
+.box2{background-color: green;}
+
+.box3{background-color: red;}
+    
+</style>
+
+</head>
+<body>
+<h1>The box-sizing CSS property sets how the total width and height of an element is calculated.</h1>   
+
+<h2>border-box : BOX size will inside to his Parent container : 
+    Parent container=600px ,
+    Child container=200px ,
+    Border 1+1 =2px ,
+    Padding 5+5 =10px
+    then Content Size in BOX = 200-2-10=188px  </h2>
+    
+
+<h2>BORDER BOX ELEMENT-WIDTH =  Child container-WIDTH - ALL BORDER-WIDTH - ALL PADDING </h2>
+
+<h1 style="color: red;"> IF box-sizing: border-box then 3.5 px is default margin between Child Container </h1>
+
+<h2> EW = CW 200px - B (1px LEFT + 1 px RIGHT) - P (5px LEFT + 5 px RIGHT) = Total 188px </h2>
+
+<div class="bigbox">
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+</div>
+    
+</body>
+</html>

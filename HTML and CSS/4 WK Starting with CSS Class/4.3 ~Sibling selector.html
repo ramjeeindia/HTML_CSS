@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sibling Selector</title>
+    <style>
+      p ~ span {
+        color: red;
+      }
+
+      /* Example 2 */
+      .bigbox ~ div {
+        background-color: aqua;
+      }
+
+      .siblingbox ~ .selectedsibl {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>" - ", " > "," + " ," ` "</h1>
+
+    <h2>
+      The general sibling combinator (~) separates two selectors and matches all
+      iterations of the second element, that are following the first element
+      (though not necessarily immediately), and are children of the same parent
+      element.
+    </h2>
+    <p>Syntax: former_element ~ target_element { style properties }</p>
+
+    <!-- In the below code article is parent -->
+
+    <article>
+      <span>This is not red because it appears before any paragraph.</span>
+      <p>Here is a paragraph.</p>
+      <code>Here is some code.</code>
+      <span>
+        This span is red because it appears after the paragraph, even though
+        there are other nodes in between
+      </span>
+      <p>Whatever it may be, keep smiling.</p>
+
+      <h1>Dream big</h1>
+      <span>
+        Doesn't matter how many or what kind of nodes are in between, all spans
+        from the same parent after a paragraph are red.
+      </span>
+    </article>
+
+    <span>
+      This span is not red because it it doesn't share a parent with a paragraph
+    </span>
+    <hr />
+    <!-- Example 2 -->
+    <code>Syntax used : bigbox ~ div {background-color: aqua;} </code>
+    <p>
+      This means all siblings of div color will change
+      <mark>not applicable for div child </mark>
+    </p>
+    <div class="bigbox">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box3</div>
+    </div>
+
+    <div>This is sibling combinator</div>
+    <div>This is sibling combinator</div>
+    <div>This is sibling combinator</div>
+    <div>This is sibling combinator</div>
+
+    <hr />
+
+    <!-- Example 3 -->
+    <code> Syntax used : .siblingbox ~ .selectedsibl {background-color: blueviolet; </code>
+    <p>
+      This means all seleceted siblings class of div color will change
+      <mark>not applicable for div child </mark>
+    </p>
+    <div class="siblingbox">
+      <div class="box">box1</div>
+      <div class="box">box2</div>
+      <div class="box">box3</div>
+    </div>
+    <div>This is sibling combinator</div>
+    <div class="selectedsibl">This is sibling combinator</div>
+    <div>This is sibling combinator</div>
+    <div class="selectedsibl">This is sibling combinator</div>
+    <div>
+      <div class="selectedsibl">put under div then div .This is Child of Example 3 sibling combinator Then syntax will not work</div>
+      </div>
+  </body>
+</html>

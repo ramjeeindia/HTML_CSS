@@ -1,0 +1,90 @@
+<!-- Que - 8
+Create a simple color picker using CSS Grid to enable users to select colors efficiently. The objective is to design a visually appealing interface that allows users to choose colors and obtain their corresponding color codes. By leveraging CSS Grid, ensure a user-friendly layout that simplifies the color selection process. Let's build a color picker similar to the one shown in the below image.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 8</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: #000;
+        color: #cac8c8;
+      }
+
+      .container {
+        display: grid;
+        height: 90vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        justify-items: center;
+        margin: 10px;
+      }
+
+      .container .box {
+        border-radius: 10px;
+        height: 100%;
+        width: 70%;
+        padding-top: 40%;
+        color: #000000;
+        font-weight: bold;
+        text-align: center;
+        justify-items: center;
+        align-content: center;
+      }
+      h1 {
+        padding: 10px 10px 10px 30px;
+      }
+      .box-1 {
+        background-color: #8d3daf;
+      }
+      .box-2 {
+        background-color: #e07c24;
+      }
+      .box-3 {
+        background-color: #758283;
+      }
+      .box-4 {
+        background-color: #e03bbb;
+      }
+      .box-5 {
+        background-color: #ff6666;
+      }
+      .box-6 {
+        background-color: #03c6c7;
+      }
+      .box-7 {
+        background-color: #cad5e2;
+      }
+      .box-8 {
+        background-color: #35bdd0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Feeling Fancy</h1>
+    <div class="container">
+      <div class="box box-1">#8D3DAF</div>
+      <div class="box box-2">#E07C24</div>
+      <div class="box box-3">#758283</div>
+      <div class="box box-4">#E03BBB</div>
+      <div class="box box-5">#FF6666</div>
+      <div class="box box-6">#03C6C7</div>
+      <div class="box box-7">#CAD5E2</div>
+      <div class="box box-8">#35BDD0</div>
+    </div>
+  </body>
+</html>

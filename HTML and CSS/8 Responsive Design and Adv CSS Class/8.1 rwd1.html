@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+</head>
+
+<style>
+.box{
+    height: 100vh;
+    width: 900px;
+}
+
+h1{
+    color: #ff0000;
+}
+    /* we can define query for media, print like  @media screen and () {}*/
+    /* define screen size upto 576px and below screen */
+    @media screen and (max-width:576px){
+       .box{
+        background-color: #f4f4f8;
+       }
+       h1{
+        color: #1ed10e;
+
+       }
+    }
+/* Large device 576px and up screen */
+
+@media screen and (min-width:576px){
+       
+    }
+
+
+</style>
+
+<body>
+    <div class="box">
+        <h1 class="screen">Width :</h1>
+      </div>
+</body>
+</html>

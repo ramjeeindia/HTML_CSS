@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+<style>
+.box{
+    /*  position is required  */
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #8a2be2;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+       animation: move 2s ease-in-out 0s 1 alternate;
+
+/* first of all define keyframe for animation as below codes */
+
+}
+/* keyframes name define as move name we can define any name */
+@keyframes move {
+    from{left: 0px }
+     to{left: 200px}
+}
+
+</style>
+
+</head>
+<body>
+   
+    <h1> animation: name duration timing-function delay iteration-count direction fill-mode;</h1>
+    <div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

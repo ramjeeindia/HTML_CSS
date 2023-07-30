@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media HTML</title>
+</head>
+<body style="background-color: rgb(165, 116, 211);color: azure;">
+    
+    <h1>Media and Modern HTML</h1>
+
+<h2>Images</h2>
+<!--  for web image link -->
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">Img Doc Web Link </a>
+
+<br>
+<!-- for local image link <img src="/PW.jpg" alt="SAP"> -->
+
+<!-- for loacl imgage with height and width  -->
+
+<img src="/PW.jpg" height="300" width="500" alt="PW HK">
+<br>
+<!-- Loading lazy Option will load image after web page load to balance web load -->
+<img src="/PW.jpg" loading="lazy" height="200" width="300" alt="PW HK">
+
+
+
+<!--  Image Mapping -->
+
+
+FOR Free Image Generator
+     
+<a href="https://www.image-map.net/">Free Image Generator Website</a>
+
+<hr>
+<!-- we can use picture tag  for change according to media size if fail to load then img tag work-->
+<picture>
+<source media="(min-width:560px)" srcset="https://cdn.pixabay.com/photo/2023/07/14/10/50/flower-8126748_640.jpg"/>
+<source media="(min-width:900px)" srcset="https://cdn.pixabay.com/photo/2023/07/16/18/21/flowers-8131239_640.jpg"/>
+<img src="https://cdn.pixabay.com/photo/2023/07/08/12/48/butterfly-8114483_640.jpg" alt="">
+</picture>
+
+
+
+
+<h1>Getting a Audio on page </h1>
+
+<audio src="https://samplelib.com/lib/preview/mp3/sample-12s.mp3" controls > Audio Show</audio>
+<hr>
+<!-- <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls autoplay> Source free2</audio>  -->
+
+<audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls autoplay muted> Audio muted auto play</audio>
+ <hr>
+<audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" coontrols nodownload> audio no download option</audio>
+<!-- controls controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar" -->
+<hr>
+<audio src="/MELODIES.mp3"  controllists="nodownload" controls> audio no download option</audio>
+
+<hr>
+
+<!-- we can assign two source if one faile then another auto play -->
+
+    <audio controls>
+    <source src="https://www.youtube.com/watch?v=Gb2n7L4fKgQ">
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+ 
+ </audio>
+
+ <!-- <audio controls autoplay>
+
+    <source src="https://www.youtube.com/watch?v=Gb2n7L4fKgQ">
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+     
+     </audio> -->
+
+
+     <h2>Audio Tag With Pause Control</h2>
+     <audio  id="Aud" src="https://samplelib.com/lib/preview/mp3/sample-12s.mp3" controls > Audio Show Pause</audio>
+ <br>
+     <button onclick="playAudio()" type="button">Play Audio</button> 
+     <button onclick="pauseAudio()" type="button">Pause Audio</button> 
+   
+     <script>
+     var x = document.getElementById("Aud"); 
+     function playAudio() {x.play();} 
+     function pauseAudio() {x.pause();} 
+     </script>
+ 
+     <h2>Audio Tag With play Control</h2>
+     <audio src="https://samplelib.com/lib/preview/mp3/sample-15s.mp3" controls autoplay controlslist = "nodownload 
+     " > Audio Show Auto Play</audio>
+ 
+ 
+         
+ <h2>Audio Tag With muted Control</h2>
+ <audio src="https://samplelib.com/lib/preview/mp3/sample-6s.mp3" controls muted > Audio Show Muted</audio>
+ 
+     <!-- <video controls controlslist="nofullscreen nodownload noremoteplayback noplaybackrate foobar"></video> -->
+ 
+ 
+
+<hr>
+     <h1>Insert Video </h1>
+     <br>
+     <p>
+     For Free Video 
+     <a href="https://www.pexels.com/" targrt="_blank" >free Video1>>>https://www.pexels.com/</a>
+    </p>
+     <p>
+     <a href="https://pixabay.com/" targrt="_blank" >free Video2>>>https://pixabay.com/</a>
+    </p>
+     <p>
+     <a href="https://unsplash.com/" targrt="_blank" >free Video3>>>https://unsplash.com</a>
+    </p>
+    <br>
+
+<map name="image-map">
+    <area target="" alt="Image" title="Image" href="https://images.pexels.com/photos/16763202/pexels-photo-16763202.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=600&amp;lazy=load" coords="" shape="rect">
+</map>
+
+
+<br>
+
+     <!-- Copy video link after pressing rtk on video for wrap text ALT+Z.... -->
+     
+     <video src="https://player.vimeo.com/external/530280355.sd.mp4?s=2cf211242e606a06c31958e947a2ea9738af8fd0&profile_id=164&oauth2_token_id=57447761" controls></video>
+     <!-- WE can define auto play, muted after play, h and width -->
+     <br>
+     <video src="https://player.vimeo.com/external/530280355.sd.mp4?s=2cf211242e606a06c31958e947a2ea9738af8fd0&profile_id=164&oauth2_token_id=57447761" controls autoplay muted height="500" width="400" download>download</video>
+     
+     <!-- Another way to load video if one failed then second will auto play if tag used as below <video><source src=""></video>  for control and add another video tag as <video controls><source src=""><source src ""></video>-->
+     <br>
+     <video controls>
+         <source src="https://player.vimeo.com/external/568582611.sd.mp4?s=0767de924426aef1ea713c202c595d259576ae07&profile_id=164&oauth2_token_id=57447761">
+         <source src="https://player.vimeo.com/external/530280355.sd.mp4?s=2cf211242e606a06c31958e947a2ea9738af8fd0&profile_id=164&oauth2_token_id=57447761">
+     </video>
+ 
+ <hr>
+
+<h2>iframe</h2>
+
+<!-- iframe -->
+
+<iframe src="/16 tablefun.html" frameborder="0"></iframe>
+<br>
+<iframe src="/16 tablefun.html" height="400" width="1000" frameborder="1"></iframe>
+<br>
+<iframe src="/16 tablefun.html" height="400" width="1000" sandbox="allow-forms" frameborder="1"></iframe>
+
+
+
+</body>
+</html>
